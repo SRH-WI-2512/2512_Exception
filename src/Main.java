@@ -1,5 +1,21 @@
 import java.util.Date;
+/*
+Exceptions sind in Klassen hierarchisch angelegt.
+Werden über einen Try/Catch überprüft.
+Es können mehrere Catchblöcke hintereinander „gestellt“ werden. Dabei müssen sie vom spezifischen zum unspezifischen angereit werden.
+Arten: Checked und Unchecked Exception:
+- Checked Exception werden während dem Kompilieren vom Compiler überprüft.
+- Unchecked Exception werden vom Compiler ignoriert und die Java Virtueller
+Stichwort "throws" ändert die Methodensignatur. Dadurch hat man ein Problem bei der Überschreibung und Überladung.
 
+Try Blöcke allein können zum einen mit Catch- und/oder Finally-Block ausgeführt werden.
+- Try:      Eine Anweisung "probiert".
+- Catch:    Falls die Anweisung im Try-Block nicht ausgeführt werden kann, wird ein Fehler aufgerufen.
+- Finally:  Egal was im Try oder Catch Block passiert, der Finally Block wird immer ausgeführt.
+            Wenn im Try Block eine Returnanweisung aufgerufen wird und dadurch der Try-Block beendet wird,
+            wird der Finally-Block dennoch ausgeführt
+
+ */
 public class Main {
 
     public static void killme() {
